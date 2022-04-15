@@ -10,3 +10,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([-38.136944, 176.250833]).addTo(map)
     .bindPopup('<h3>Rotorua</h3>')
     .openPopup();
+
+    for (let etappe of ETAPPEN) {
+        //console.log(etappe);
+        L.marker([etappe.lat, etappe.lng]).addTo(map);
+    }
