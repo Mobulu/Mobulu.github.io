@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuseelandreise</title>
+
+    <!-- Tab-Vorschaubild-->
+    <link rel="shortcut icon" href="images/user.jpg" type="image/jpg">
+
+    <!-- Stile einbauen-->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font awesome einbauen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet Bibliothek -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <!-- Kartenskipt -->
+    <script defer src="main.js"></script>
+
+</head>
+
+<body>
+
+    <main class="shadow">
+        <header>
+            <img class="banner" src="images/header.jpg"
+                alt="Dampfender See im Vordergrund mit Vegetation und kleineren Bergen im Hintergrund">
+            <a href="https://github.com/mobulu"><img class="user shadow" src="images/user.jpg"
+                    alt="Another one rides the cap"></a>
+        </header>
+        <article>
+            <h1>Neuseelandreise</h1>
+            <h2><em>Rotorua</em></h2>
+            <p> Rotorua ist eine Stadt im Distrikt Rotorua Lakes der Region Bay of Plenty auf der Nordinsel von
+                Neuseeland. Die Stadt ist Sitz des Rotorua Lakes Council und auch als Kurort sehr beliebt. <br> <br>
+
+                Neben den <strong>Geothermalparks</strong> stellt der <strong>Pohutu Geysir</strong>, die
+                <strong>Thermalfelder von Whakarewarewa</strong> nahe der Stadt und die <strong>einzige Schnitz-
+                    und Kunstakademie der Māori</strong>e die wichtigsten Attraktionen der Stadt dar. Auch der
+                botanische
+                Garten besitzt eine gewisse Bekanntheit. Das früher sowohl von Māori als auch von Europäern gegründete
+                Te Wairoa, eine kleine Ortschaft unweit Rotoruas, die bis 1886 als Ausgangspunkt zu den White and Pink
+                Terraces diente, wird immer öfter besucht. In dem einst durch einen Vulkanausbruch verschütteten und
+                wieder ausgegrabenen Dorf wurde ein Museum zur Geschichte der Siedlung eingerichtet.
+                (Quelle: <a href="https://de.wikipedia.org/wiki/Rotorua">Wikipedia</a>)</p>
+
+            <figure>
+                <img src="images/attraction.jpg"
+                    alt="Steinlandschaft mit Geysir-Fontäne im Vordergrund und grüner Landschaft im Hintergrund">
+                <figcaption><i class="fa-solid fa-camera-retro"></i> Blick auf den Pohutu Geysir. Bild: <a
+                        href="https://pixabay.com/de/photos/neuseeland-pohutu-geysir-geysir-4800303/">Makalu</a>
+                </figcaption>
+            </figure>
+
+            <h3>Übersichtskarte</h3>
+            <div id="map"></div>
+
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://de.wikivoyage.org/wiki/Rotorua">Wikivoyage: Rotorua – Reiseführer</a></li>
+                <li><a href="https://www.rotoruanz.com/">Offizielle Tourismus-Website von Rotorua</a></li>
+                <li><a href="https://teara.govt.nz/en/volcanic-plateau-places/page-4">Malcolm McKinnon: Volcanic
+                        Plateau places – Rotorua city</a></li>
+            </ul>
+        </article>
+        <footer>
+            <nav>
+                <a class="back" href="https://andrea-1408.github.io/nz/index.html"><i
+                        class="fa-solid fa-circle-arrow-left"></i> vorhergehende Etappe</a>
+                <a class="next" href="https://franzwagner7.github.io/nz/index.html">nächste Etappe <i
+                        class="fa-solid fa-circle-arrow-right"></i></a>
+            </nav>
+        </footer>
+    </main>
+
+</body>
+
+</html>
