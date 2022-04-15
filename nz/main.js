@@ -11,8 +11,8 @@ L.marker([-38.136944, 176.250833]).addTo(map)
     .bindPopup('<h3>Rotorua</h3>')
     .openPopup();
 
-    for (let etappe of ETAPPEN) {
-        let popup = `
+for (let etappe of ETAPPEN) {
+    let popup = `
       <h3>${etappe.titel} (Etappe ${etappe.nr})</h3>
       <ul>
       <li>geogr. Länge: ${etappe.lng}</li>
@@ -21,12 +21,12 @@ L.marker([-38.136944, 176.250833]).addTo(map)
       <li><a href="https://${etappe.github}.github.io/nz/">Link zur Etappenseite</a></li>
   </ul>
   `;
-        //console.log(etappe);
-        L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
-    }
+    //console.log(etappe);
+    L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
+}
 
 // DOC Hütten anzeigen
-  for (let hut of HUTS) {
+for (let hut of HUTS) {
     let popup = `
     <h3>${hut.name}</h3>
     <h4>${hut.region}</h3>
@@ -36,11 +36,10 @@ L.marker([-38.136944, 176.250833]).addTo(map)
     <hr>
     <a href="${hut.link}" target="Neuseeland">Link zur Hütte</a>
 `;
-L.circleMarker([hut.lat, hut.lng]).addTo(map).bindPopup(popup);
+    L.circleMarker([hut.lat, hut.lng]).addTo(map).bindPopup(popup);
 
-// Etappennavigation erweitern
+    // Etappennavigation erweitern
 
-let link = `<a href="https://${etappe.github}.github.io/nz/" class="etappenLink" title="${etappe.titel}">${etappe.nr}</a>`;
-document.querySelector("#navigation").innerHTML += link;
+    let link = `<a href="https://${etappe.github}.github.io/nz/" class="etappenLink" title="${etappe.titel}">${etappe.nr}</a>`;
+    document.querySelector("#navigation").innerHTML += link;
 }
-
