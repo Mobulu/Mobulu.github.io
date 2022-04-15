@@ -27,5 +27,5 @@ L.marker([-38.136944, 176.250833]).addTo(map)
 
 // DOC Hütten anzeigen
   for (let hut of HUTS) {
-    L.marker([hut.lat, hut.lng]).addTo(map);
+    L.circleMarker([hut.lat, hut.lng]).addTo(map);
 }
