@@ -24,3 +24,8 @@ L.marker([-38.136944, 176.250833]).addTo(map)
         //console.log(etappe);
         L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
     }
+
+// DOC Hütten anzeigen
+  for (let hut of HUTS) {
+    L.marker([hut.lat, hut.lng]).addTo(map);
+}
