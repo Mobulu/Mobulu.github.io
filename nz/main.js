@@ -27,5 +27,15 @@ L.marker([-38.136944, 176.250833]).addTo(map)
 
 // DOC Hütten anzeigen
   for (let hut of HUTS) {
-    L.circleMarker([hut.lat, hut.lng]).addTo(map);
+    let popup = `
+    <h3>${hut.name}</h3>
+    <h4>${hut.region}</h3>
+    <hr>
+    <p>${hut.info}</p>
+    <img src="${hut.image}" alt="Vorschaubild">
+    <hr>
+    <a href="${hut.link}" target="Neuseeland">Link zur Hütte</a>
+`;
+L.circleMarker([hut.lat, hut.lng]).addTo(map).bindPopup(popup);
 }
+
